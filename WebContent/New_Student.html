@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>NewStudent</title>
+<style type="text/css">
+.container{
+width:350px;
+height:670px;
+position: absolute;
+right: 600px;
+bottom:50px;
+background:transparent;
+border:7px solid gray;
+border-radius: 10px;
+box-shadow:0px 2px 2px 2px lime; 
+}
+body{
+background-image: url("background collge.jpg");
+background-size:100% 800px; 
+}
+.box{
+ margin-top:10px;
+ width: 200px;
+ height: 30px;
+ border: 3px solid black;
+ box-shadow: 1px 1px 1px black;
+ font-size: 20px;
+ border-radius:5px;
+ color:white;
+ background:transparent; 
+}
+#heading{
+text-decoration:blink;
+color:orange;
+}
+#up{
+ position: absolute;
+ bottom:7px;
+ left: 100px;
+ width: 150px;
+ height: 35px;
+ border-radius:10px;
+ border: 3px solid teal;
+ background: transparent;
+ border: 3px solid black;
+ box-shadow: 3px 2px 2px black;
+ font-size: 25px;
+ color:white;
+}
+#up:hover{
+border-radius:5px;
+    color:#040731;
+    box-shadow:0 0 16px yellow;
+}
+</style>
+</head>
+<body>
+ <center>
+ <form action="NewStudent" method="post">
+ <div class="container">
+ <h1 id="heading">Student SignUp</h1>
+  <input class="box" placeholder="Enter name" name="sname"><br><br>
+  <input class="box" placeholder="fatherName" name="fname"><br><br>
+  <input class="box" placeholder="Emai_Id" name="email"><br><br>
+  <input class="box" placeholder="password" name="password"><br><br>
+  <input class="box" placeholder="Address" name="add"><br><br>
+  <input class="box" placeholder="MobileNumber" name="mb"><br><br>
+  <input class="box" placeholder="rollnumber" name="roll"><br>
+  <h3>Gender
+  <input  type="radio" value="male" name="gender" name="gender">Male
+  <input  type="radio" value="Female" name="gender" name="gender">Female
+  </h3>
+  <h2>Class
+  <select class="box" name="cls">
+   <option>1class</option>
+   <option>2class</option>
+   <option>3class</option>
+   <option>4class</option>
+   <option>5class</option>
+   <option>6class</option>
+   <option>7class</option>
+   <option>8class</option>
+   <option>9class</option>
+   <option>10class</option>
+  </select></h2>
+  <br><br>
+  <input id="up" type="Submit" value="Signup">
+ </div>
+</form>
+ </center>
+</body>
+</html>
